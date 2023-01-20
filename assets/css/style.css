@@ -19,24 +19,47 @@ p {
 }
 
 body {
-    align-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 /* inicia header */
 
 .headerContent {
-    width: 100vp;
+    width: 100%;
     align-items: center;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 20px 0;
 }
 
-.logo {
-    max-width: 100%;
+.containerLogo{
+    display: grid;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
+
+.fundationBeCoaching a{
+    max-width: 60%;
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-size: 4rem;
+    color: #ff9a17;
+}
+
+.fundationBeCoaching a p {
+    margin: auto;
+    text-align: center;
+}
+
+.logo1 {
+    max-width: 50%;
+}
+
+.logo2 {
+    max-width: 100%;
 }
 
 .principalTitle{
@@ -48,9 +71,13 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-items: center;
     margin: auto;
     max-width: 1200px;
+}
+
+.containerNav a{
+    text-decoration: none;
 }
 
 .buttonStyle {
@@ -190,17 +217,28 @@ body {
 /* inicia main */
 
 main{
-    background-color: #242323;
+    background-color: #131313;
     height: 100vh;
+    margin-top: 30px;
+    align-items: center;
+    justify-items: center;
 }
 
-.slide {
+/* .slide {
     width: 100%;
-    height: 400px;
-    background: #325166;
 }
 
-.slide img {
+.slide img{
+    max-width: 100%;
+    margin: auto;
+    position: absolute;
+} */
+
+/* .slide2{
+    background-image:url("/sources/17.png");
+} */
+
+/* .slide img {
     width: 100%;
     max-height: 100%;
     z-index: 0;
@@ -253,7 +291,7 @@ main{
     
     .secciones{
         width: 100%;
-        background: rgb(0, 0, 0);
+        background: rgb(39, 39, 39);
         display: grid;
     }
     
@@ -290,7 +328,9 @@ main{
     .secciones article .textPrice{
         text-align: center;
         font-size: 2em;
-        color: #504c15;
+        font-weight: bolder;
+        text-shadow: 2px 2px 5px white;
+        color: #940505;
         padding: 20px;
     }
     
@@ -300,13 +340,22 @@ main{
         font-family: 'Rubik';
         font-size: 3em;
         text-align: center;
+        font-weight: bolder;
         margin-bottom: 30px;
+        color: white;
+        text-shadow: 2px 2px 15px #0091ff;;
     }
 
     .passage {
-        padding: 20Px;
-        font-size: 1.4em;
+        padding: 10Px;
+        font-size: 1.1em;
         margin-bottom: 15px;
+    }
+
+    .titleTrilogia {
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #75cfe8;
     }
 
     .imgPrice{
