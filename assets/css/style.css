@@ -429,7 +429,8 @@ main{
         margin-top: 60px;
         bottom: 0px;
         width: 100%;
-        background: #111;
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 18%, rgba(0,145,255,1) 100%);
     }
 
     .main-content {
