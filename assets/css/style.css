@@ -217,7 +217,7 @@ body {
 /* inicia main */
 
 main{
-    background-color: #131313;
+    background-color: #ffffff;
     height: 100vh;
     margin-top: 30px;
     align-items: center;
@@ -297,7 +297,7 @@ main{
     
     .articulo {
         columns: 200px 2;
-        column-gap: 25px;
+        column-gap: 30px;
         color: #fff;
         padding: 25px;
     }
@@ -329,8 +329,8 @@ main{
         text-align: center;
         font-size: 2em;
         font-weight: bolder;
-        text-shadow: 2px 2px 5px white;
-        color: #940505;
+        text-shadow: 2px 2px 5px #940505;
+        color: white;
         padding: 20px;
     }
     
@@ -349,7 +349,6 @@ main{
     .passage {
         padding: 10Px;
         font-size: 1.1em;
-        margin-bottom: 15px;
     }
 
     .titleTrilogia {
@@ -361,6 +360,63 @@ main{
     .imgPrice{
         width: 100%;
         align-items: center;
+    }
+
+    .formStyle_1 {
+        color: white;
+        text-shadow: 2px 2px 15px #0091ff;;
+        padding: 0px;
+        width: 100%;
+        margin-top: 25px;
+        display: inline-block;
+        justify-items: center; }
+
+    .botonSend {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 30px;
+        margin: 0 5px;
+        background: #013f6e;
+        color: #ffffff;
+        font-family: 'Rubik';
+        font-size: .8rem;
+        font-weight: 600;
+        border: none;
+        transition: .4s ease all;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .boton span,
+    .botonSend span {
+        position: relative;
+        z-index: 2;
+        transition: 2s;
+    }
+
+    .boton:after,
+    .botonSend:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #0091ff;
+        position: absolute;
+        z-index: 1;
+        top: -30px;
+        left: 0;
+        transition: .3s ease-in-out;
+    }
+
+    .boton:hover::after,
+    .botonSend:hover::after {
+        top: 0;
+    }
+
+    .botonSend {
+        margin: 10px 10px 0 10px;
     }
 
     @media screen and (max-width: 700px){
