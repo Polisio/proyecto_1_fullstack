@@ -219,7 +219,7 @@ body {
 
 main{
     background-color: #ffffff;
-    height: 400px;
+    height: 800px;
     margin-top: 30px;
     margin-bottom: 400px;
     align-items: center;
@@ -425,6 +425,7 @@ main{
     /* inicia footer */
 
     footer {
+        font-family: 'Rubik';
         margin-top: 400px;
         margin-top: 60px;
         bottom: 0px;
@@ -467,7 +468,7 @@ main{
         content: '';
         height: 2px;
         width: 15%;
-        background: #f12020;
+        background: #9eab1f;
         top: -10px;
     }
 
@@ -475,121 +476,66 @@ main{
         text-align: justify;
     }
 
-    .left .content .social {
-        margin: 20px 0 0 0;
-    }
-
-    .left .content .social a {
-        padding: 0 2px;
-    }
-
-    .left .content .social a span {
-        height: 40px;
-        width: 40px;
-        background: #1a1a1a;
-        line-height: 40px;
-        text-align: center;
-        font-size: 18px;
-        border-radius: 5px;
-        transition: 0.3s;
-    }
-
-    .left .content .social a span:hover {
-        background: #f12020;
-    }
-
-    .center .content .fas {
-        font-size: 1.4375rem;
-        background: #1a1a1a;
-        height: 45px;
-        width: 45px;
-        line-height: 45px;
-        text-align: center;
-        border-radius: 50%;
-        transition: 0.3s;
-        cursor: pointer;
-    }
-
-    .center .content .fas:hover {
-        background: #f12020;
-    }
-
-    .center .content .text {
+    .center .content {
         font-size: 1.0625rem;
         font-weight: 500;
         padding-left: 10px;
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    .center .content .phone {
-        margin: 15px 0;
+    .contentSocialMedia a i {
+        font-size: 4rem;
     }
 
-    .right form .text {
-        font-size: 1.0625rem;
-        margin-bottom: 2px;
-        color: #656565;
+
+    .contentSocialMedia a #FB {
+        color: #424242;
+    }
+    .contentSocialMedia a #FB:hover {
+        color: #4267B2;
     }
 
-    .right form .msg {
-        margin-top: 10px;
+    .contentSocialMedia a #TG {
+        color: #424242;
+    }
+    .contentSocialMedia a #TG:hover {
+        color: #229ED9;
     }
 
-    .right form input,
-    .right form textarea {
-        width: 100%;
-        font-size: 1.0625rem;
-        background: #151515;
-        padding-left: 10px;
-        border: 1px solid #222222;
+    .contentSocialMedia a #YT {
+        color: #424242;
+    }
+    .contentSocialMedia a #YT:hover {
+        color: #FF0000;
     }
 
-    .right form input:focus,
-    .right form textarea:focus {
-        outline-color: #3498db;
+    .contentSocialMedia a i:hover {
+        color: #424242;
     }
 
-    .right form input {
-        height: 35px;
+    .listStyle {
+        list-style: none;
     }
 
-    .right form .btn {
-        margin-top: 10px;
+    .listStyle li{
+        margin-bottom: 15px;
     }
 
-    .right form .btn button {
-        height: 40px;
-        width: 100%;
-        border: none;
-        outline: none;
-        background: #f12020;
-        font-size: 1.0625rem;
-        font-weight: 500;
-        cursor: pointer;
-        transition: .3s;
-    }
-
-    .right form .btn button:hover {
-        background: #000;
-    }
-
-    .bottom center {
-        padding: 5px;
-        font-size: 0.9375rem;
-        background: #151515;
-    }
-
-    .bottom center span {
-        color: #656565;
-    }
-
-    .bottom center a {
-        color: #f12020;
+    .listStyle li a{
+        align-items: center;
         text-decoration: none;
+        font-weight: bold;
+        color: #1a1a1a;
     }
 
-    .bottom center a:hover {
-        text-decoration: underline;
+    .listStyle li a:hover{
+        color: #013f6e;
     }
+
+
 
     @media screen and (max-width: 900px) {
         footer {
@@ -606,19 +552,6 @@ main{
             margin: 5px 0;
         }
     }
-
-
-    /*****Eliminar border por defecto de un botton */
-    input {
-        border: none;
-        outline: none;
-    }
-
-    textarea {
-        outline: none;
-        outline: none;
-    }
-
 
     @media screen and (max-width: 700px){
         ul.tabs li{
