@@ -47,7 +47,8 @@ body {
     text-decoration: none;
     font-family: 'Rubik';
     font-size: 4rem;
-    color: #ff9a17;
+    color: #003e6d;
+    text-shadow: 2px 2px 15px #003e6d;
 }
 
 .fundationBeCoaching a p {
@@ -325,7 +326,7 @@ ul.tabs li a i {
     font-weight: bolder;
     margin-bottom: 30px;
     color: white;
-    text-shadow: 2px 2px 15px #0091ff;;
+    text-shadow: 2px 2px 15px #0091ff;
 }
 
 .passage {

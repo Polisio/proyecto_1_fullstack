@@ -74,6 +74,10 @@
 
     @media screen and (max-width: 768px){
         
+        .fundationBeCoaching a{
+            font-size: 3rem;
+        }
+
         main{
             margin-bottom: 580px;
         }
@@ -91,6 +95,10 @@
     
     @media screen and (max-width: 576px){
         
+        .fundationBeCoaching a{
+            font-size: 3rem;
+        }
+
         main{
             margin-bottom: 630px;
         }
