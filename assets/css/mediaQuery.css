@@ -1,0 +1,120 @@
+
+    /* vista mobile */
+
+    @media screen and (max-width: 992px) {
+        
+        /* header */
+
+        .containerNav {
+            justify-content: center;
+            margin: auto;
+            max-width: 900x;
+        }
+
+        /* tabs */
+
+        main{
+            margin-bottom: 280px;
+        }
+
+        .wrap{
+            max-width: 100%;
+            margin: 30px auto;
+        }
+        
+        .title {
+            font-size: 3em;
+        }
+
+        .divContainer li {
+            margin-top: 20px;
+            margin-left: 0px;
+        }
+
+        .passage {
+            padding: 5Px;
+            font-size: 1em;
+            text-align: left;
+        }
+
+        .titleTrilogia {
+            font-weight: bold;
+            font-size: 1em;
+            color: white;
+            text-shadow: 2px 2px 15px #0091ff;
+        }
+
+        /* cards */
+
+        .containerCard {
+            justify-content: center;
+        }
+
+        .card {
+            margin-top: 20px;
+        }
+
+        /* footer */
+        
+        footer {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .main-content {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .main-content .box {
+            margin: 5px 0;
+        }
+
+    }
+
+    @media screen and (max-width: 768px){
+        
+        main{
+            margin-bottom: 580px;
+        }
+
+        ul.tabs li{
+            width: none;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        .secciones article p{
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width: 576px){
+        
+        main{
+            margin-bottom: 630px;
+        }
+        
+        ul.tabs li a .tab-text{
+            display: none;
+        }
+
+        ul.tabs li a i {
+            display: flex;
+            align-items: center;
+            justify-content:  center;
+            font-size: 1.5em;
+        }
+        
+        ul.tabs li a{
+            padding: 15px 0px;
+        }
+    
+        ul.tabs li a .tab-text{
+            display: none;
+        }
+    
+        .secciones article{
+            padding: 20px;
+        }
+    }
